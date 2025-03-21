@@ -22,13 +22,26 @@ console.log('Esercizio 2 ');
 let pariDispari = prompt('Scegli tra pari o dispari');
 let numeroUtente = parseInt(prompt('Scegli un numero da 1 a 5'));
 
+//Creo funzione per generare un numero randomico da 1 a 5.
 function numeroRandom(min, max){
-
     return Math.floor(Math.random() * (max - min + 1) + min);
-    let max = 5;
-    let min = 1;
-    
 }
+//Credo variabile che somma il numero dell'utente e il numero randomico del PC.
+let sum = numeroUtente + numeroRandom(1, 5);
+//Credo funzione per capire se la somma è pari o dispari e stampo l'esito.
+function risultato (sum){
+    if(sum % 2 == 0 && pariDispari == 'pari'){
+        return 'Hai vinto';
+    }else if(sum % 2 != 0 && pariDispari == 'dispari'){
+        return 'Hai vinto';
+    }else{
+        return 'Hai perso';
+    }
+}
+
+console.log(risultato(sum));
+
+ 
 
 
 
