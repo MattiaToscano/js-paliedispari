@@ -35,7 +35,7 @@ function risultato (sum){
         return `Il numero è ${sum} hai vinto!`;
     }
     else if(sum % 2 != 0 && pariDispari == 'dispari'){
-        return `Il numero è ${sum} hai perso,ritenta, sarai più fortunato.` ;
+        return `Il numero è ${sum} hai vinto!`;
     }
     else{
         return `Il numero è ${sum} hai perso,ritenta, sarai più fortunato.` ;
